@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+checkpoints/
+outputs/
+*.safetensors
+*.pt
+*.mp4
+*.wav
+*.local.yaml
+*.log
+.env

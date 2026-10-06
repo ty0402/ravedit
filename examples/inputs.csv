@@ -1,0 +1,2 @@
+sample_id,source_video,prompt
+speech,source.mp4,"Replace the character's dialogue with: ""This is the truth."", with lip-syncing adjusted to match while maintaining all other visual elements in the frame unchanged."

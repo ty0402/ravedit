@@ -1,0 +1,23 @@
+# Paths are relative to THIS YAML file. Absolute paths also work.
+model:
+  model_path: ../checkpoints/ltx-2.5/diffusion_models/ltx-2.5-22b-dev-transformer-bf16.safetensors
+  text_encoder_path: ../checkpoints/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors
+  video_vae_path: ../checkpoints/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors
+  audio_vae_path: ../checkpoints/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors
+checkpoint: ../checkpoints/ravedit-nft.safetensors
+inference:
+  width: 1280
+  height: 736
+  frames: null
+  frame_rate: 25
+  inference_steps: 30
+  seed: 42
+  video_cfg_scale: 3.0
+  audio_cfg_scale: 7.0
+  video_stg_scale: 1.0
+  audio_stg_scale: 1.0
+  video_modality_guidance_scale: 3.0
+  audio_modality_guidance_scale: 3.0
+  guidance_rescale: 0.7
+  stg_blocks: [28]
+  negative_prompt: "worst quality, inconsistent motion, blurry, jittery, distorted, mismatched lip sync, off-sync audio"

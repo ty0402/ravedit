@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=79", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ravedit"
+version = "0.1.0"
+description = "Role-aware joint audio-visual editing with LTX-2.5"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE.md"}
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://ty0402.github.io/ravediting/"
+
+[project.scripts]
+ravedit = "ravedit.inference:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+[tool.setuptools]
+license-files = ["LICENSE.md", "THIRD_PARTY_NOTICES.md"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ltx_core = ["text_encoders/gemma/encoders/prompts/*.txt"]
